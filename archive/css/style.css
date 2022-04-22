@@ -1,0 +1,41 @@
+#field1 {
+	background-image: url(../img/Semesterplanung.png);
+	background-position: center;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 1vw;
+	background-color: #2196F3;
+	padding: 1vw;
+	width: 90vw;
+	height: 45vw;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
+
+.grid-container > div {
+	background-color: rgba(253, 155, 69, 0.942);
+	text-align: center;
+	height: 18vw;
+	width: 29.2vw;
+	padding: 20px 0;
+	font-size: 30px;
+}
+	  
+.zoom-target:hover {
+	transform: scale(1.05); 
+}
+
+.focused {
+	position: fixed;
+	transform: scale(4);
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+}
