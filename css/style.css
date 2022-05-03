@@ -1,0 +1,29 @@
+img {
+    width: 20vh;
+    height: 20vh;
+}
+
+
+
+
+/*
+custom bootstrap ajustments
+*/
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'Bangers', cursive;
+}
+
+p {
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.btn-primary{
+    background-color: #ff7a05;
+    border-color: #ff7a05;
+}
+
+.btn-primary:hover {
+    background-color: #fb8b29;
+    border-color: #fb8b29;
+}
