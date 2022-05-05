@@ -24,6 +24,11 @@ p {
 }
 
 .btn-primary:hover {
-    background-color: #fb8b29;
-    border-color: #fb8b29;
+    background-color: #FFA14E;
+    border-color: #FFA14E;
+}
+
+
+.navbar {
+    background-color: #c4c4c4;
 }
