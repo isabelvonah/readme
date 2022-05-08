@@ -28,7 +28,10 @@ p {
     border-color: #FFA14E;
 }
 
+a {
+    color:#199193;
+}
 
 .navbar {
-    background-color: #c4c4c4;
+    background-color: #199193;
 }
