@@ -14,7 +14,7 @@
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Familjen+Grotesk:ital,wght@0,500;1,500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
 
@@ -45,7 +45,22 @@
 
     <div class="container mt-5">
         <h1> Feedback </h1>
+        <p>Hinterlasse hier gerne dein Feedback zu unseren Kursen oder schreib uns, falls du einen spannenden Vorschlag für einen weiteren Kurs hast.</p>
+        <div class="input-group">
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        <a href="#" onclick="showFeedbackMsg()" class="btn btn-primary btn-lg">Abschicken</a>
+        <p id="feedback-msg"></p>
     </div>
+    </div>
+
+    <script>
+
+        function showFeedbackMsg () {
+        document.getElementById("feedback-msg").innerHTML = '<br> Danke für dein Feedback. <i class="bi bi-chevron-right"></i> <a href="../html/impressum.html">Impressum</a>';
+        }
+
+    </script>
 
         
         

@@ -18,10 +18,15 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function loadFirst () {
+  videos[0].load();
+}
+
 // Code that moves to the next slide
 next.addEventListener("click", function () {
   if (current === 0)
     document.getElementById("prev").classList.remove("hidden");
+    document.getElementById("los").classList.add("hidden");
   videos[current].pause();
   clicking();
   slides[current].classList.remove("active");

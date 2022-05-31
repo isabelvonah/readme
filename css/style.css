@@ -39,7 +39,7 @@
 custom bootstrap ajustments
 */
 
-h1, h2, h3, h4, h5, h6, a {
+h1, h2, h3, h4, h5, h6, a, button {
     font-family: 'Bangers', cursive;
 }
 
@@ -72,6 +72,12 @@ a:hover {
 
 .col-10 {
   padding-right: 30px;
+}
+
+.input-group {
+  width: 80%;
+  margin-bottom: 20px;
+  height: 300px;
 }
 
 /*
@@ -130,6 +136,12 @@ strong {
 
 .hidden {
   display: none;
+}
+
+#los {
+  position: fixed;
+  bottom: 65px;
+  left: 40%;
 }
 
 .prev {
