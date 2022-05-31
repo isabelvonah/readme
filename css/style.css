@@ -1,8 +1,37 @@
-img {
-    width: 20vh;
-    height: 20vh;
-}
+/* JS manipulated styles */
 
+.slide {
+    display: none;
+  }
+  
+  .slide.active {
+    display: inline-block;
+  }
+  
+  /* Appearance Styles */
+  
+  .slider {
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 50rem) {
+    .slider {
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+  }
+    .slides {
+    }
+      .frame{
+      }
+        .slide {
+          box-sizing: border-box;
+          height: 100%;
+          padding-left: 2rem;
+          padding-bottom: 2rem;
+          font-size: 3rem;
+          color: white;
+        }
 
 
 
@@ -15,7 +44,7 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 p {
-    font-family: 'Familjen Grotesk', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .btn-primary{
@@ -32,6 +61,34 @@ a {
     color:#199193;
 }
 
+a:hover {
+  color:#136364;
+}
+
 .navbar {
     background-color: #199193;
+}
+
+/*
+custom css
+*/
+
+.navigation {
+  position: fixed;
+  bottom: 20px;
+  font-size: 100px;
+}
+
+.prev {
+  left: 40%;
+}
+
+.next {
+  right: 40%;
+}
+
+.progress {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
 }

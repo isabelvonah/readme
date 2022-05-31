@@ -14,8 +14,8 @@
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Familjen+Grotesk:ital,wght@0,500;1,500&display=swap" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+    
     <script src="https://unpkg.com/@popperjs/core@2"></script>
 
 </head>
@@ -40,18 +40,116 @@
         </div>
       </nav>
 
-    <div class="container mt-5">
-        <h1> Kapitel </h1>
-        <h2> 1. Was ist eigentlich ein readme? </h2>
-        <p>
-            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
-            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
-        </p>
-        <a href="#" class="btn btn-primary btn-lg">Loslegen</a>
-    </div>
+      <canvas style='width: 300px; height: 100px'></canvas>
 
-        
-        
+      <img src="https://i.stack.imgur.com/PUSIu.gif">
+    
+      <div class="container mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-10">
+                  <div class="container">
+                    <h1> Kapitel </h1>
+                    
+                    <div class="row">
+                      <div class="col-8">
+                        <h2> 1. Was ist eigentlich ein readme? </h2>
+                        <p>
+                            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
+                            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <a href="test.html" class="btn btn-primary btn-lg">Loslegen</a>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-8">
+                        <h2> 2. Warum schreibt man ein readme? </h2>
+                        <p>
+                            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
+                            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <a href="#" class="btn btn-primary btn-lg">Loslegen</a>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-8">
+                        <h2> 2. Welche Bestandteile hat ein readme? </h2>
+                        <p>
+                            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
+                            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <a href="#" class="btn btn-primary btn-lg">Loslegen</a>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-8">
+                        <h2> 4. Wer liest das readme? </h2>
+                        <p>
+                            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
+                            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <a href="#" class="btn btn-primary btn-lg">Loslegen</a>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-8">
+                        <h2> 5. Welche Formate werden verwendet? </h2>
+                        <p>
+                            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
+                            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <a href="#" class="btn btn-primary btn-lg">Loslegen</a>
+                      </div>
+                    </div>
+                    
+                    <div class="row">
+                      <div class="col-8">
+                        <h2> 6. Beispiele </h2>
+                        <p>
+                            studyready ist ein Projekt, das von der Konferenz Schweizerischer Gymnasialrektorinnen und Gymnasialrektoren und im Auftrag von swissuniversities ins Leben gerufen wurde.
+                            In .. verschiedenen Kursen lernst du Tools kennen, die dich im Studium weiterbringen.
+                        </p>
+                      </div>
+                      <div class="col-4">
+                        <a href="#" class="btn btn-primary btn-lg">Loslegen</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+            </div>
+        </div>
+
+    
+        <script>
+          const canvas = document.querySelector('canvas')
+          const {
+            width,
+            height
+          } = canvas
+          const img = document.querySelector('img')
+
+          setTimeout(() => {
+            canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+            img.style.visibility = 'hidden'
+          }, 10000);
+        </script>
       
 </body>
 </html>
