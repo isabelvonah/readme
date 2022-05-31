@@ -20,29 +20,31 @@ function sleep(ms) {
 
 // Code that moves to the next slide
 next.addEventListener("click", function () {
+  if (current === 0)
+    document.getElementById("prev").classList.remove("hidden");
   videos[current].pause();
   clicking();
   slides[current].classList.remove("active");
-  numbers[current].className = numbers[current].className.replace(" bg-primary", " bg-secondary");
   current ++;
-  if (current === slides.length)
-    current = 0;
+  if (current === slides.length-1)
+    document.getElementById("next").classList.add("hidden");
   slides[current].classList.add("active");
-  numbers[current].className = numbers[current].className.replace(" bg-secondary", " bg-primary");
+  numbers[current].classList.add("number-active");
   videos[current].load();
 });
 
 // Code that moves to the previous slide
 previous.addEventListener("click", function () {
+  if (current === slides.length-1)
+    document.getElementById("next").classList.remove("hidden");
   videos[current].pause();
   clicking();
   slides[current].classList.remove("active");
-  numbers[current].className = numbers[current].className.replace(" bg-primary", " bg-secondary");
+  numbers[current].classList.remove("number-active");
   current --;
-  if (current < 0)
-    current = (slides.length - 1);
+  if (current === 0)
+    document.getElementById("prev").classList.add("hidden");
   slides[current].classList.add("active");
-  numbers[current].className = numbers[current].className.replace(" bg-secondary", " bg-primary");
   videos[current].load();
 });
 

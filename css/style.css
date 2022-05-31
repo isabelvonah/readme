@@ -16,7 +16,7 @@
   
   @media (min-width: 50rem) {
     .slider {
-      max-width: 50rem;
+      max-width: 130vh;
       margin: 0 auto;
     }
   }
@@ -118,6 +118,20 @@ strong {
   font-size: 100px;
 }
 
+.number {
+  width: 30px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.number-active {
+  background-color:#fbb60f;
+}
+
+.hidden {
+  display: none;
+}
+
 .prev {
   left: 40%;
 }
@@ -127,9 +141,9 @@ strong {
 }
 
 .progress {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
+  position: absolute;
+  top: 35px;
+  right: 35px;
 }
 
 img {
