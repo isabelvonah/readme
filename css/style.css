@@ -43,13 +43,14 @@ h1, h2, h3, h4, h5, h6, a {
     font-family: 'Bangers', cursive;
 }
 
-p {
+p, .tooltip, .tooltiptext {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 .btn-primary{
     background-color: #ff7a05;
     border-color: #ff7a05;
+    margin-top: 0px;
 }
 
 .btn-primary:hover {
@@ -69,9 +70,47 @@ a:hover {
     background-color: #199193;
 }
 
+.col-10 {
+  padding-right: 30px;
+}
+
+/*
+tooltip
+*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /*
 custom css
 */
+
+
+
+strong {
+  font-style: bold;
+  font-size: 18px;
+}
 
 .navigation {
   position: fixed;
@@ -91,4 +130,10 @@ custom css
   position: fixed;
   bottom: 20px;
   left: 50%;
+}
+
+img {
+  width: 100%;
+  padding: 20px;
+  padding-left: 0;
 }
