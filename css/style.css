@@ -48,14 +48,19 @@ p, .tooltip, .tooltiptext {
 }
 
 .btn-primary{
-    background-color: #ff7a05;
-    border-color: #ff7a05;
+    background-color: #fbb60f;
+    border-color: #fbb60f;
     margin-top: 0px;
 }
 
 .btn-primary:hover {
-    background-color: #FFA14E;
-    border-color: #FFA14E;
+    background-color: #ffc53e;
+    border-color: #f0be4a;
+}
+
+.btn-primary:focus {
+    background-color: #ffc53e;
+    border-color: #f0be4a;
 }
 
 a {
@@ -141,7 +146,7 @@ strong {
 #los {
   position: fixed;
   bottom: 65px;
-  left: 40%;
+  left: 45%;
 }
 
 .prev {
@@ -162,4 +167,9 @@ img {
   width: 100%;
   padding: 20px;
   padding-left: 0;
+}
+
+#ups-img {
+  width: 50%;
+  margin-bottom: 50px;
 }
