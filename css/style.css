@@ -16,7 +16,7 @@
   
   @media (min-width: 50rem) {
     .slider {
-      max-width: 130vh;
+      max-width: 120vh;
       margin: 0 auto;
     }
   }
@@ -124,9 +124,9 @@ strong {
 }
 
 .navigation {
-  position: fixed;
+  position: absolute;
   bottom: 20px;
-  font-size: 100px;
+  font-size: 85px;
 }
 
 .number {
@@ -145,16 +145,18 @@ strong {
 
 #los {
   position: fixed;
-  bottom: 65px;
+  bottom: 60px;
   left: 45%;
 }
 
 .prev {
   left: 40%;
+  position: absolute;
 }
 
 .next {
   right: 40%;
+  position: absolute;
 }
 
 .progress {
