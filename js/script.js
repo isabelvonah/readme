@@ -20,6 +20,7 @@ function sleep(ms) {
 
 function loadFirst () {
   videos[0].load();
+  document.getElementById("next").classList.remove("hidden");
 }
 
 // Code that moves to the next slide
